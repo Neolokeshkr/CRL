@@ -1,10 +1,15 @@
 import React from 'react'
-
-import { ExampleComponent } from 'test-ui-lib'
+import { ExampleComponent, Container, FormatMsg } from 'test-ui-lib'
 import 'test-ui-lib/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+        <ExampleComponent text="Create React Library Example 😄" />
+        <Container />
+        <FormatMsg />
+    </div>
+  )
 }
 
 export default App
